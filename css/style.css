@@ -6,6 +6,10 @@
 :root {
     --main-color: rgb(88, 247, 255);
 }
+body {
+    background-color: #eee;
+}
+
 header.main-logo {
     width: 100vw;
     height: 80px;
@@ -22,11 +26,6 @@ header.main-logo {
         margin-left: 50px;
     }
 }
-
-body {
-    background-color: #eee;
-}
-
 .main-container {
     margin-top: 0;
     margin-bottom: 20px;
