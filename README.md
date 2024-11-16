@@ -8,6 +8,6 @@
 
 -   ### Ahmed Bouramdane
 
--   ### Hytham Krab
+-   ### Haytham Krab
 
 -   ### Member 3
