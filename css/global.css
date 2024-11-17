@@ -1,34 +1,12 @@
-body {
-    font-family: "Cairo" !important;
-    height: 4000px;
-}
-/** To top button start */
-.to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    font-size: 42px;
-
-    cursor: pointer;
-    display: none;
-    > .to-top-btn {
-        border-radius: 50%;
-        background-color: yellow;
-        color: darkblue;
-    }
-}
-/** To top button end */
-h1.title {
-    color: green;
-}
-
 :root {
     --main-color: rgb(88, 247, 255);
 }
-body {
-    background-color: #eee;
-}
 
+body {
+    font-family: "Cairo";
+    background-color: #eee;
+
+}
 header.main-logo {
     width: 100vw;
     height: 60px;
@@ -46,7 +24,7 @@ header.main-logo {
     }
 }
 .margin {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 /** To top button start */
