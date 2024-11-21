@@ -10,6 +10,11 @@ $(document).ready(function () {
                     <span class='fas fa-chevron-circle-up to-top-btn'></span>
                 </div>
     `);
+    $("body").append(`
+        <footer>
+            <h2 class="h4">Copyright © 2024 - Lydex de Rabat</h2>
+        </footer>
+    `);
     //* To top button
 
     $(window).scroll(function () {
@@ -22,4 +27,6 @@ $(document).ready(function () {
     $(".to-top").click(function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+    $(".text-title .text").append("Sujet de l'événement:");
+    $(".imgs-title .text").append("Photos accompagnant le sujet:");
 });

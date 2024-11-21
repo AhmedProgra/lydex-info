@@ -1,5 +1,8 @@
 :root {
     --main-color: rgb(88, 247, 255);
+    --main-color: #d0d3df;
+    --icons-color: color: rgb(21, 21, 21);
+
 }
 
 body {
@@ -19,12 +22,13 @@ header.main-logo {
     top: 0;
     right: 0;
     > img {
-        height: 100%;
-        margin-left: 50px;
+        height: 60px;
+        margin-left: 100px;
+        transform: scale(1.5);
     }
 }
 .margin {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 /** To top button start */
@@ -33,7 +37,7 @@ header.main-logo {
     bottom: 40px;
     right: 20px;
     font-size: 42px;
-
+    z-index: 10000;
     cursor: pointer;
     display: none;
     > .to-top-btn {
@@ -43,3 +47,17 @@ header.main-logo {
     }
 }
 /** To top button end */
+
+/*todo: Start Footer Styling */
+footer {
+    width: 100vw;
+    height: 80px;
+    background-color: var(--main-color);
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+/*todo: End Footer Styling */
