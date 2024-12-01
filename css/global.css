@@ -2,7 +2,7 @@
     --main-color: rgb(88, 247, 255);
     --main-color: #d0d3df;
     --icons-color: color: rgb(21, 21, 21);
-
+    --footer-height: 80px;
 }
 
 body {
@@ -12,25 +12,9 @@ body {
     position: relative;
     min-height: 1000px;
 }
-header.main-logo {
-    width: 100vw;
-    height: 60px;
-    border-bottom: 2px solid black;
-    overflow: hidden;
-    box-shadow: 0px -5px 8px 6px #333;
-    position: fixed;
-    background-color: var(--main-color);
-    z-index: 100000;
-    top: 0;
-    right: 0;
-    > img {
-        height: 60px;
-        margin-left: 100px;
-        transform: scale(1.5);
-    }
-}
-.margin {
-    margin-bottom: 80px;
+
+.margin-bottom, .margin-top {
+    margin-bottom: 120px;
 }
 
 /** To top button start */
@@ -44,16 +28,41 @@ header.main-logo {
     display: none;
     > .to-top-btn {
         border-radius: 50%;
-        background-color: yellow;
-        color: darkblue;
+        background-color: var(--bs-black);
+        color: var(--bs-info);
     }
 }
 /** To top button end */
 
+/** Start Navbar Styling  */
+nav.navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 2px rgb(69, 69, 69);
+    .dropdown-menu {
+        background-color: #eee !important;
+    }
+    & .navbar-brand img {
+        width: 60px;
+        border-radius: 50%;
+    }
+    & .navbar-nav .nav-item {
+        color: black !important;
+    }
+}
+/** End Navbar Styling  */
+
+
 /*todo: Start Footer Styling */
 footer {
     width: 100vw;
-    height: 80px;
+    height: var(--footer-height);
     background-color: var(--main-color);
     border-top: 2px solid black;
     display: grid;
@@ -62,7 +71,38 @@ footer {
     align-content: center;
     margin-top: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: -135px;
     left: 0;
 }
 /*todo: End Footer Styling */
+
+
+/*todo Start SplideJS Styling */
+.splide {
+    width: 60vw;
+    height: 400px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #333;
+    & img {
+        width: 60vw;
+        height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .splide {
+    width: 95vw;
+    height: 350px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #333;
+    & img {
+        width: 95vw;
+        height: 350px;
+    }
+}
+}
+/*todo End SplideJS Styling */

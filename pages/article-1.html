@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La sorite écologie</title>
-        <link rel="stylesheet" href="../css/article-files.css" />
         <!--* Start - Import The General External CSS File -->
         <link rel="stylesheet" href="../css/article-files.css" />
         <!--* End - Import The General External CSS File -->
@@ -12,10 +11,9 @@
     <body>
         <!--* Start - Primary Title  -->
         <h1 class="title">
-            <span class="fas fa-paperclip icon"></span>
+            <span class="fas fa-newspaper icon"></span>
             <span class="text">La sortie écologie:</span>
         </h1>
-        <hr />
         <!--* End - Primary Title  -->
 
         <main>
@@ -98,27 +96,30 @@
                 <span class="icon fas fa-images"></span>
                 <span class="text"></span>
             </h2>
-            <picture>
-                <img src="../imgs/computer.jpeg" alt="" />
-                <img src="../imgs/code.jpeg" alt="" />
-                <img src="../imgs/languages.jpeg" alt="" />
-                <img src="../imgs/computer.jpeg" alt="" />
-                <img src="../imgs/code.jpeg" alt="" />
-                <img src="../imgs/languages.jpeg" alt="" />
-                <img src="../imgs/computer.jpeg" alt="" />
-                <img src="../imgs/code.jpeg" alt="" />
-                <img src="../imgs/languages.jpeg" alt="" />
-                <img src="../imgs/computer.jpeg" alt="" />
-                <img src="../imgs/code.jpeg" alt="" />
-                <img src="../imgs/languages.jpeg" alt="" />
-            </picture>
+            <section class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="../imgs/computer.jpeg" alt="" srcset=""></li>
+                        <li class="splide__slide"><img src="../imgs/languages.jpeg" alt="" srcset=""></li>
+                        <li class="splide__slide"><img src="../imgs/marche-verte.jpeg" alt="" srcset=""></li>
+                        <li class="splide__slide"><img src="../imgs/code.jpeg" alt="" srcset=""></li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
         <!--* Start - JavaScript & jQuery External Files -->
         <script src="../js/all.min.js"></script>
         <script src="../js/jquery-3.7.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.5.1.js"></script>
+        <script src="../js/bootstrap-5.3.3.min.js"></script>
         <script src="../js/global.js"></script>
+        <script src="../js/splide.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let splide = new Splide(".splide");
+                splide.mount();
+            });
+        </script>
         <!--* End - JavaScript & jQuery External Files -->
     </body>
 </html>

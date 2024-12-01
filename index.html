@@ -6,25 +6,237 @@
         <title>Journal de lydex Rabat</title>
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/all.min.css" />
-        <link rel="stylesheet" href="css/bootstrap.5.1.3.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/logo.css" />
+        <link rel="stylesheet" href="css/bootstrap-5.3.3.min.css" />
     </head>
     <body>
-        <header class="main-logo">
-            <img src="./imgs/APEELOGO.png" alt="Logo" />
-        </header>
-        <div class="margin"> </div>
+        <div class="margin-bottom"></div>
         <div class="main-container">
-            <header class="journal-title">
-                <img src="imgs/lydex-journal.png" alt="logo" class="left-img" />
-                <h1 class="">Journal de lydex Rabat</h1>
-                <img
-                    src="imgs/lydex-journal.png"
-                    alt="logo"
-                    class="right-img" />
-            </header>
-            <article class="articles row pe-2 ps-2 mt-4">
+            <!--todo Nav Bar Start  -->
+            <div class="lydex-navbar">
+                <nav class="navbar navbar-expand-lg text-white">
+                    <div class="container-fluid">
+                        <div class="navbar-brand">
+                            <img
+                                src="./imgs/journal-info-logo.jpg"
+                                alt=""
+                                srcset="" />
+                            Lydex-Info
+                        </div>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Catégories des aricles
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Toutes les catégories
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Catécorie 5
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 6
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Catégories des interviws
+                                    </a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Toutes les catégories
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Catécorie 4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Catécorie 5
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Catécorie 6
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Catécorie 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="./pages/about-us.html">
+                                        À propos de nous
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="#"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Nous contacter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--! Lydex Navbar End-->
+            <!--todo Nav Bar End  -->
+
+            <!--todo  Strat - Modal - Nous contacter -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                <b>Nous Contacter</b> - Avec l'équipe de développeurs
+                            </h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Bienvenue dans le monde entier sur notre site web
+                            <b>"Lydex Info"</b>, Vous pouvez communiquer avec
+                            nous par l'un des moyennes suivants:
+                            <br>
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                                >Close</button
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--todo  End - Modal - Nous contacter -->
+
+            <article class="articles row pe-2 ps-2 mt-4" data-genre="sportive">
                 <div
                     class="article card col-lg-3 col-md-4 col-sm-6 col-8 p-0 m-0">
                     <img class="card-img-top" src="imgs/computer.webp" alt="" />
@@ -36,14 +248,13 @@
                         </p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
+                                <i class="fas fa-newspaper"></i> Sportive
+                            </li>
+                            <li class="list-group-item">
                                 <i class="fas fa-map-marked-alt"></i> Le théatre
                             </li>
                             <li class="list-group-item">
                                 <i class="fas fa-calendar-alt"></i> 21/10/2024
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fas fa-cog fa-spin"></i> En
-                                progression
                             </li>
                         </ul>
                         <a class="btn btn-info" data-src="article-1"></a>
@@ -185,16 +396,24 @@
             </article>
         </div>
 
+        <!--todo Start Footer -->
+        <footer>
+            <h2 class="h4">Copyright © 2024 - Lydex de Rabat</h2>
+        </footer>
+        <!--todo End Footer -->
+
         <!-- * To top button -->
         <div class="to-top">
             <i class="fas fa-chevron-circle-up to-top-btn"></i>
         </div>
         <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/popper-1.16.1.min.js"></script>
+        <script src="js/bootstrap-5.3.3.min.js"></script>
         <script src="js/all.min.js"></script>
-        <script src="./js/global.js"></script>
+        <!-- <script src="./js/global.js"></script> -->
         <script>
             //* Button Text
-            $(".card .btn").append("En savoir plus").attr("target", "_blank");
+            $(".card .btn").append("En savoir plus");
 
             //* Button Click event
             $(".card .btn").each(function (index, element) {
