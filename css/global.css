@@ -56,8 +56,59 @@ nav.navbar {
         color: black !important;
     }
 }
+.icons.pt-3 {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	justify-content: space-evenly;
+    cursor: pointer;
+}
+.dropdown-item {
+    transition-duration: 200ms;
+}
+.dropdown-item:hover {
+
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: #319bffd6 !important;
+}
 /** End Navbar Styling  */
 
+
+/** Start About As Card */
+.table {
+    width: 80vw;
+    margin: 0 auto;
+    box-shadow: 2px 2px 6px 2px black;
+
+}
+.technologies {
+        background-color: #c8c8c8;
+        border-radius: 15px;
+        width: 90vw;
+        margin: 0 auto;
+        overflow: hidden;
+    .item {
+        font-size: 21px;
+        font-family: Cairo-Bold;
+        padding: 10px;
+        cursor: pointer;
+        transition-duration: 200ms;
+        border-top: 2px solid #eee;
+        &:hover {
+            background-color: #59afffd6;
+        }
+    }
+    .content {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 20px;
+        display: none;
+        margin-left: 30px;
+        padding-right: 60px;
+        text-align: justify;
+    }
+
+}
+/** End About As Card */
 
 /*todo: Start Footer Styling */
 footer {
@@ -102,6 +153,10 @@ footer {
     & img {
         width: 95vw;
         height: 350px;
+    }
+
+    .table {
+        width: 95vw !important;
     }
 }
 }

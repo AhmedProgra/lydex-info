@@ -46,7 +46,7 @@ body {
 
 .articles {
     justify-content: space-evenly;
-    .article {
+    .article, .interview {
         margin: 10px 6px !important;
         overflow: hidden;
         transition-duration: 400ms;

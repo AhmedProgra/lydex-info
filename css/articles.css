@@ -12,7 +12,8 @@ h1.title {
 .imgs-title {
     margin-top: 40px;
     padding: 8px 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 60px;
     background-color: var(--main-color);
     text-align: center;
     box-shadow: 7px 4px 9px -1px #000;
