@@ -5,16 +5,20 @@ $(document).ready(function () {
     $("body").prepend(`
                 <div class="margin-bottom">
                 </div>
-
-
             <div class="lydex-navbar">
                 <nav class="navbar navbar-expand-lg text-white">
                     <div class="container-fluid">
                         <div class="navbar-brand">
                             <img
                                 src="../../imgs/journal-info-logo.jpg"
+                                class="one"
+                                 />
+                            <img
+                                src="../imgs/journal-info-logo.jpg"
                                 alt=""
-                                srcset="" />
+                                srcset=""
+                                class="two"
+                                 />
                             Lydex-Info
                         </div>
                         <button
