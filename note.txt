@@ -1,1 +1,2 @@
 https://github.com/AhmedProgra/lydex-news.git
+https://ahmedprogra.github.io/lydex-info/
