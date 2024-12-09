@@ -37,16 +37,16 @@ $(document).ready(function () {
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link active home-page"
                                         aria-current="page"
                                         href="../../index.html">
                                         Accueil
                                     </a>
                                 </li>
 
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" title="Aller à la page d'accueil">
                                     <a
-                                        class="nav-link dropdown-toggle"
+                                        class="nav-link dropdown-toggle disabled"
                                         href="../index.html"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -82,9 +82,9 @@ $(document).ready(function () {
                                     </ul>
                                 </li>
 
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" title="Aller à la page d'accueil">
                                     <a
-                                        class="nav-link dropdown-toggle"
+                                        class="nav-link dropdown-toggle disabled"
                                         href="#"
                                         role="button"
                                         data-bs-toggle="dropdown"
@@ -93,7 +93,7 @@ $(document).ready(function () {
                                     </a>
                                     <ul class="dropdown-menu bg-info">
                                         <li>
-                                            <a class="dropdown-item" href="../../index.html">
+                                            <a class="dropdown-item" href="../index.html">
                                                 Toutes les catégories
                                             </a>
                                         </li>
@@ -113,7 +113,7 @@ $(document).ready(function () {
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="../../index.html">
                                                 Catécorie 4
                                             </a>
                                         </li>
@@ -185,7 +185,9 @@ $(document).ready(function () {
     `);
     $("body").append(`
         <footer>
-            <h2 class="h4">Copyright © 2024 - Lydex de Rabat</h2>
+            <h2 class="h4">Copyright © ${new Date(
+                Date.now()
+            ).getFullYear()} - Lydex de Rabat</h2>
         </footer>
     `);
     //* To top button
@@ -204,9 +206,9 @@ $(document).ready(function () {
     $(".imgs-title .text").append("Photos accompagnant le sujet:");
 
     //todo Start Menu links
-    $('.home-page').click(function(e) {
-        $('.articles .article').show();
-        $('.articles .interview').show();
+    $(".home-page").click(function (e) {
+        $(".articles .article").show();
+        $(".articles .interview").show();
     });
     $(".article-types li a").click(function (e) {
         $(".articles .interview").hide();
@@ -216,7 +218,7 @@ $(document).ready(function () {
         });
         $(this).css({
             "background-color": "#319aff",
-            color: "white"
+            color: "white",
         });
         const linkCat = $(this).attr("data-src");
         const articles = $(".articles .article");
@@ -229,6 +231,7 @@ $(document).ready(function () {
         if (linkCat === "cat-tous") {
             $(articles).show();
         }
+        $(".no-result").hide();
     });
 
     $(".interview-types li a").click(function (e) {
@@ -250,7 +253,7 @@ $(document).ready(function () {
             if ($(this).attr("data-src") != linkCat) {
                 $(this).hide();
             } else {
-                count+=1;
+                count += 1;
             }
         });
         if (linkCat === "cat-tous") {
@@ -258,8 +261,11 @@ $(document).ready(function () {
             count = "all";
         }
         if (count == 0) {
-            $("body").append(`<h1 class='text-danger text-center no-result'>Il n'y a aucun résultat pour "${"Interview - " + $(this).text()}"</h1>`)
+            $("body").append(
+                `<h1 class='text-danger text-center no-result'>Il n'y a aucun résultat pour "${
+                    "Interview - " + $(this).text()
+                }"</h1>`
+            );
         }
-
     });
 });

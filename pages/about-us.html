@@ -20,7 +20,8 @@
         </h2>
         <div class="technologies">
             <div class="item" data-src="faq-item-1">
-                <i class="fas fa-globe pe-2"></i> HTML, CSS et JavaScript (Web Languages)
+                <i class="fas fa-globe pe-2"></i> HTML, CSS et JavaScript (Web
+                Languages)
             </div>
             <div class="content" data-src="faq-item-1">
                 Bien entendu, nous avons utilisé les trois langages du web:
@@ -38,7 +39,8 @@
             </div>
 
             <div class="faq-item-2 item" data-src="faq-item-6">
-                <i class="fab fa-font-awesome pe-2"></i> Font Awesome (version=6.5.1)
+                <i class="fab fa-font-awesome pe-2"></i> Font Awesome
+                (version=6.5.1)
             </div>
             <div class="content" data-src="faq-item-6">
                 Nous avons utilisé <b>Font Awesome</b>, car il fournit des
@@ -47,7 +49,12 @@
             </div>
 
             <div class="item" data-src="faq-item-3">
-                <img src="../imgs/jquery-plain-wordmark.svg" width="32" alt="" class="p-0 pe-2"> jQuery (version=3.7.1)
+                <img
+                    src="../imgs/jquery-plain-wordmark.svg"
+                    width="32"
+                    alt=""
+                    class="p-0 pe-2" />
+                jQuery (version=3.7.1)
             </div>
             <div class="content" data-src="faq-item-3">
                 Et Bien Sûr, nous avons utilisé le fameux <b>jQuery</b>, qui a
@@ -67,30 +74,34 @@
                 <i class="fas fa-video pe-2"></i> Video JS (version=8.16.1)
             </div>
             <div class="content" data-src="faq-item-5">
-                Nous avons utilisé <b>Video JS</b> pour afficher des vidéos accompagnant des articles
-                ou des interviews sous forme vidéo en utilisant le thème fantastique.
+                Nous avons utilisé <b>Video JS</b> pour afficher des vidéos
+                accompagnant des articles ou des interviews sous forme vidéo en
+                utilisant le thème fantastique.
             </div>
 
             <div class="item" data-src="faq-item-7">
-                <i class="fas fa-code pe-2"></i> Visual Studio Code (Code Editor)
+                <i class="fas fa-code pe-2"></i> Visual Studio Code (Code
+                Editor)
             </div>
             <div class="content" data-src="faq-item-7">
-                Nous avons utilisé l'éditeur <b>Visual Studio Code</b>, qui est open source et gratuit, et
-                regorge de plugins pour aider dans le processus de développement.
+                Nous avons utilisé l'éditeur <b>Visual Studio Code</b>, qui est
+                open source et gratuit, et regorge de plugins pour aider dans le
+                processus de développement.
             </div>
 
-            <div class="item" data-src="faq-item-8"> <i class="fab fa-github pe-2"></i> Git et Github </div>
+            <div class="item" data-src="faq-item-8">
+                <i class="fab fa-github pe-2"></i> Git et Github
+            </div>
             <div class="content" data-src="faq-item-8">
-                Nous avons également utilisé <b>Git</b> pour contrôler les versions du site web,
-                et nous l'avons également téléchargé sur <b>GitHub</b> pour conserver les copies du project
-                et la possibilité de modification unifiée.
+                Nous avons également utilisé <b>Git</b> pour contrôler les
+                versions du site web, et nous l'avons également téléchargé sur
+                <b>GitHub</b> pour conserver les copies du project et la
+                possibilité de modification unifiée.
             </div>
         </div>
         <!--* technologies End -->
 
-        <h2 class="text-title">
-            <i class="fas fa-code"> </i> Développeurs
-        </h2>
+        <h2 class="text-title"> <i class="fas fa-code"> </i> Développeurs </h2>
         <table class="table border-2">
             <thead>
                 <tr class="table-primary">
@@ -223,6 +234,9 @@
         <script src="../js/bootstrap-5.3.3.min.js"></script>
         <script src="../js/global.js"></script>
         <script>
+            setTimeout(function () {
+                $(".home-page").attr("href", "../index.html");
+            }, 1000);
             $(".technologies .item").each(function (i, el) {
                 $(el).click(function () {
                     const curr = $(this);
