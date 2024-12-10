@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ahmed</title>
+        <title>Lydex Info</title>
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -228,38 +228,13 @@
             </div>
             <!--todo  End - Modal - Nous contacter -->
 
-            <article class="articles row pe-2 ps-2 mt-4" data-genre="sportive">
+            <article class="articles row pe-2 ps-2 mt-4">
                 <div
                     class="article card col-lg-3 col-md-4 col-sm-6 col-8 p-0 m-0"
                     data-src="cat-1">
                     <img class="card-img-top" src="imgs/computer.webp" alt="" />
                     <div class="card card-body">
-                        <h4 class="card-title fw-bold"> Article 1 </h4>
-                        <p class="card-text text-muted">
-                            ici, vous écrivez une très brève description de
-                            l'événement...
-                        </p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <i class="fas fa-map-marked-alt"></i> Le théatre
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fas fa-calendar-alt"></i> 21/10/2024
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fas fa-newspaper"></i> Article - cat 1
-                            </li>
-                        </ul>
-                        <a class="btn btn-info" data-src="article-1"></a>
-                    </div>
-                </div>
-
-                <div
-                    class="article card col-lg-3 col-md-4 col-sm-6 col-8 p-0 m-0"
-                    data-src="cat-1">
-                    <img class="card-img-top" src="imgs/computer.webp" alt="" />
-                    <div class="card card-body">
-                        <h4 class="card-title fw-bold">Article 2</h4>
+                        <h4 class="card-title fw-bold">Article 1</h4>
                         <p class="card-text text-muted">
                             ici, vous écrivez une très brève description de
                             l'événement...
@@ -275,6 +250,36 @@
                             </li>
                             <li class="list-group-item">
                                 <i class="fas fa-newspaper"></i> Article - cat 1
+                            </li>
+                        </ul>
+                        <a class="btn btn-info" data-src="article-1"></a>
+                    </div>
+                </div>
+
+                <div
+                    class="article card col-lg-3 col-md-4 col-sm-6 col-8 p-0 m-0"
+                    data-src="cat-1">
+                    <img class="card-img-top" src="imgs/computer.webp" alt="" />
+                    <div class="card card-body">
+                        <h4 class="card-title fw-bold">
+                            L’équipe de basket-ball
+                        </h4>
+                        <p class="card-text text-muted">
+                            Performance prometteuse de l’équipe féminine de
+                            basket-ball du Lydex.
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-map-marked-alt"></i> Centre
+                                sportif Uqba Ben Nafeh
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-calendar-alt"></i> 29 Nov et 6
+                                Déc 2024
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-newspaper"></i> Article de
+                                sport
                             </li>
                         </ul>
                         <a class="btn btn-info" data-src="article-2"></a>
@@ -453,9 +458,7 @@
         </div>
 
         <!--todo Start Footer -->
-        <footer>
-
-        </footer>
+        <footer> </footer>
         <!--todo End Footer -->
 
         <!-- * To top button -->
@@ -471,7 +474,7 @@
             //* Button Text
             $(".card .btn").append("En savoir plus");
 
-            //* Button Click event
+            //* Card Button Click event
             $(".article .card .btn").each(function (index, element) {
                 $(this).attr(
                     "href",

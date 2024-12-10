@@ -58,7 +58,7 @@ body {
             }
         }
         .card-body {
-            padding: 10px;
+            padding: 4px;
         }
         .card-title {
             font-family: "Cairo-ExtraBold";
@@ -86,8 +86,8 @@ body {
                 padding: 0 !important;
                 svg {
                     vertical-align: middle;
-                    font-size: 16px;
-                    margin-right: 10px;
+                    font-size: 14px;
+                    margin-right: 2px;
                     padding: 2px;
                 }
             }

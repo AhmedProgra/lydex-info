@@ -120,7 +120,7 @@ $(document).ready(function () {
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../pages/about-us.html">
+                                    <a class="nav-link about-us" href="../about-us.html">
                                         À propos de nous
                                     </a>
                                 </li>
@@ -203,6 +203,7 @@ $(document).ready(function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
     $(".text-title .text").append("Sujet de l'événement:");
+    $(".text-title .team").append("L'équipe: ");
     $(".imgs-title .text").append("Photos accompagnant le sujet:");
 
     //todo Start Menu links

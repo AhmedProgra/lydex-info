@@ -11,6 +11,9 @@
             img.one {
                 display: none;
             }
+            .navbar-brand img.two {
+                display: inline-block;
+            }
         </style>
     </head>
     <body>
@@ -106,8 +109,8 @@
             <thead>
                 <tr class="table-primary">
                     <th scope="col">ID</th>
-                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Compétences</th>
                 </tr>
             </thead>
@@ -130,8 +133,8 @@
             <thead>
                 <tr class="table-primary">
                     <th scope="col">ID</th>
-                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Compétences</th>
                 </tr>
             </thead>
@@ -144,24 +147,30 @@
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Dhailou</td>
-                    <td>Imane</td>
-                    <td> Rédaction d'articles </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Akabli</td>
-                    <td>Youssera</td>
-                    <td> Rédaction d'articles </td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
                     <td>Chahboune</td>
                     <td>Marwa</td>
                     <td> Rédaction d'articles </td>
                 </tr>
                 <tr>
+                    <th scope="row">3</th>
+                    <td>Benlafkih El Idrissi</td>
+                    <td>Rania</td>
+                    <td>Rédaction des articles</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Dhailou</td>
+                    <td>Imane</td>
+                    <td> Rédaction d'articles </td>
+                </tr>
+                <tr>
                     <th scope="row">5</th>
+                    <td>Akabli</td>
+                    <td>Youssera</td>
+                    <td> Rédaction d'articles </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
                     <td>Zaali</td>
                     <td>Fatima Zahra</td>
                     <td> Rédaction d'articles </td>
@@ -175,8 +184,8 @@
             <thead>
                 <tr class="table-primary">
                     <th scope="col">ID</th>
-                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Compétences</th>
                 </tr>
             </thead>
@@ -202,8 +211,8 @@
             <thead>
                 <tr class="table-primary">
                     <th scope="col">ID</th>
-                    <th scope="col">Prénom</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">Compétences</th>
                 </tr>
             </thead>
@@ -222,9 +231,9 @@
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Krab</td>
-                    <td>Haytham</td>
-                    <td> Photographie </td>
+                    <td>Ait Ouarrim</td>
+                    <td>Rihab </td>
+                    <td>Photographie</td>
                 </tr>
             </tbody>
         </table>
@@ -236,7 +245,9 @@
         <script>
             setTimeout(function () {
                 $(".home-page").attr("href", "../index.html");
+                $(".about-us").attr("href", "#");
             }, 1000);
+
             $(".technologies .item").each(function (i, el) {
                 $(el).click(function () {
                     const curr = $(this);

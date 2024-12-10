@@ -1,25 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 h1.title {
-    margin-left: 20px;
-    color: green;
+    color: var(--bs-info);
     font-family: Courgette;
+    margin-bottom: -45px;
+    margin-top: -15px;
+    font-size: 32px;
+    text-align: center;
     & .icon {
         font-size: 28px;
-        color: rgb(21, 21, 21);
+        color: var(--bs-info);
     }
 }
 
 .text-title,
 .imgs-title {
-    margin-top: 40px;
+    margin: 50px -30px 15px -30px;
     padding: 8px 30px;
-    margin-bottom: 30px;
-    margin-top: 60px;
     background-color: var(--main-color);
     text-align: center;
     box-shadow: 7px 4px 9px -1px #000;
     border: 1px solid black;
     & h2 {
-        padding: 20px;
         color: rgb(21, 21, 21);
         margin-left: 30px;
         & .icon {
@@ -27,18 +37,29 @@ h1.title {
         }
     }
 }
-
-article p {
-    font-size: 22px;
-    text-align: justify;
+main {
     padding: 0 30px;
-    &::first-letter {
-        font-size: 100px;
-        color: blue;
-        padding: 4px;
-        font-weight: bold;
-        font-family: Cairo-ExtraBold;
-        line-height: 10px;
+    article p {
+        font-size: 22px;
+        text-align: justify;
+        &.indent {
+            text-indent: 60px;
+        }
+    }
+    .sub-title {
+        text-decoration: underline;
+        color: var(--bs-primary);
+        margin-top: 20px;
+    }
+    img {
+        display: block;
+        width: 80vw;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    ul.team {
+        font-family: Cairo-Bold;
+        font-size: 18px;
     }
 }
 
@@ -62,5 +83,10 @@ picture {
             }
         }
     }
+}
+
+/** Logo Image */
+.navbar-brand img.two {
+    display: none;
 }
 /*todo: End Images styling */
