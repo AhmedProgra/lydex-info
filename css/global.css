@@ -1,12 +1,19 @@
+@import url("./custom.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo";
+}
+
 :root {
     --main-color: rgb(88, 247, 255);
     --main-color: #d0d3df;
     --icons-color: color: rgb(21, 21, 21);
-    --footer-height: 80px;
+    --footer-height: 85.11px;
 }
 
 body {
-    font-family: "Cairo";
     background-color: #eee !important;
     overflow-x: hidden;
     position: relative;
@@ -37,6 +44,8 @@ body {
 /** Start Navbar Styling  */
 nav.navbar {
     width: 100vw;
+    height: 85.11px;
+    border-top: 2px solid black;
     position: fixed;
     top: 0;
     left: 0;
@@ -114,7 +123,7 @@ nav.navbar {
 footer {
     width: 100vw;
     height: var(--footer-height);
-    background-color: var(--main-color);
+    background-color: #eee;
     border-top: 2px solid black;
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -144,15 +153,16 @@ footer {
 
 @media (max-width: 800px) {
     .splide {
-    width: 95vw;
+    width: 100vw;
     height: 350px;
-    margin: 10px auto;
+    margin-left: -30px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 0;
     border: 2px solid #333;
     & img {
-        width: 95vw;
+        width: 100vw;
         height: 350px;
+    border-radius: 0;
     }
 
     .table {

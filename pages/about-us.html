@@ -247,21 +247,26 @@
                 $(".home-page").attr("href", "../index.html");
                 $(".about-us").attr("href", "#");
             }, 1000);
-
+            let currentContent = undefined;
             $(".technologies .item").each(function (i, el) {
                 $(el).click(function () {
-                    const curr = $(this);
-                    $(".technologies .content").each(function (i, el) {
-                        if ($(this).attr("data-src") == curr.attr("data-src")) {
-                            $(".technologies .content").hide(400);
-                            $(".technologies .item").css(
-                                "background-color",
-                                "transparent"
-                            );
-                            $(this).show(400);
-                            curr.css("background-color", "#319bffd6");
-                        }
-                    });
+                    const item = $(this);
+                    if (item.attr("data-src") === currentContent) {
+
+                    } else {
+                        $(".technologies .content").each(function (i, el) {
+                            if ($(this).attr("data-src") == item.attr("data-src")) {
+                                currentContent = $(this).attr("data-src");
+                                $(".technologies .content").hide(400);
+                                $(".technologies .item").css(
+                                    "background-color",
+                                    "transparent"
+                                );
+                                $(this).show(400);
+                                item.css("background-color", "#319bffd6");
+                            }
+                        });
+                    }
                 });
             });
         </script>
