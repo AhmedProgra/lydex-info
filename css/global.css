@@ -11,6 +11,7 @@
     --main-color: #d0d3df;
     --icons-color: color: rgb(21, 21, 21);
     --footer-height: 85.11px;
+    --splide-height: 35vw;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 /** Start Navbar Styling  */
 nav.navbar {
     width: 100vw;
-    height: 85.11px;
+    min-width: 85.11px;
     border-top: 2px solid black;
     position: fixed;
     top: 0;
@@ -140,29 +141,34 @@ footer {
 /*todo Start SplideJS Styling */
 .splide {
     width: 60vw;
-    height: 400px;
+    height: var(--splide-height);
     margin: 10px auto;
     overflow: hidden;
     border-radius: 15px;
     border: 2px solid #333;
     & img {
-        width: 60vw;
-        height: 400px;
+        width: 100%;
+        height: var(--splide-height);
     }
 }
-
+.splide__arrow.splide__arrow--next, .splide__arrow.splide__arrow--prev {
+	background: var(--bs-info);
+}
+.splide__pagination__page {
+	background: var(--bs-info);
+}
 @media (max-width: 800px) {
     .splide {
-    width: 100vw;
-    height: 350px;
-    margin-left: -30px;
-    overflow: hidden;
-    border-radius: 0;
-    border: 2px solid #333;
-    & img {
         width: 100vw;
-        height: 350px;
-    border-radius: 0;
+        height: 60vw;
+        margin-left: -30px;
+        overflow: hidden;
+        border-radius: 0;
+        border: 2px solid #333;
+        & img {
+            width: 100vw;
+            height: 350px;
+        border-radius: 0;
     }
 
     .table {
