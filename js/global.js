@@ -270,3 +270,16 @@ $(document).ready(function () {
         }
     });
 });
+
+//todo Start - Splide JS - Gallery Of images
+document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".splide", {
+        gap: "12px",
+        type: "loop",
+        snap: true,
+        autoplay: true,
+        interval: 1500,
+    });
+    splide.mount();
+});
+//todo End - Splide JS - Gallery Of images

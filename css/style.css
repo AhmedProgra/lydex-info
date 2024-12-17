@@ -11,7 +11,7 @@
     justify-content: space-evenly;
     .article,
     .interview {
-        margin: 10px 6px !important;
+        margin: 20px 6px !important;
         overflow: hidden;
         transition-duration: 400ms;
         > img {
@@ -65,5 +65,8 @@
                 }
             }
         }
+    }
+    .card-title.fw-bold {
+        height: 50px;
     }
 }

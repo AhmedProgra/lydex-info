@@ -175,6 +175,24 @@
                     <td>Fatima Zahra</td>
                     <td> Rédaction d'articles </td>
                 </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Jallouli</td>
+                    <td>Aya</td>
+                    <td> Rédaction d'articles </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Ramli</td>
+                    <td>Yousra</td>
+                    <td> Rédaction d'articles </td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Bougha </td>
+                    <td>Hasnae</td>
+                    <td> Rédaction d'articles </td>
+                </tr>
             </tbody>
         </table>
         <h2 class="text-title">
@@ -223,17 +241,25 @@
                     <td>Douae</td>
                     <td> Design et montage video </td>
                 </tr>
+
                 <tr>
                     <th scope="row">2</th>
-                    <td>Ennesyry</td>
-                    <td>Youssef</td>
-                    <td> Design, Traitement des images (Canva) </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
                     <td>Ait Ouarrim</td>
                     <td>Rihab </td>
                     <td>Photographie</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Bouramdane</td>
+                    <td>Ahmed</td>
+                    <td>Design et Traitement des images</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Ennesyry</td>
+                    <td>Youssef</td>
+                    <td>Modifier le Logo</td>
                 </tr>
             </tbody>
         </table>
@@ -252,10 +278,12 @@
                 $(el).click(function () {
                     const item = $(this);
                     if (item.attr("data-src") === currentContent) {
-
                     } else {
                         $(".technologies .content").each(function (i, el) {
-                            if ($(this).attr("data-src") == item.attr("data-src")) {
+                            if (
+                                $(this).attr("data-src") ==
+                                item.attr("data-src")
+                            ) {
                                 currentContent = $(this).attr("data-src");
                                 $(".technologies .content").hide(400);
                                 $(".technologies .item").css(
